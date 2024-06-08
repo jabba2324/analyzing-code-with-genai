@@ -1,1 +1,2 @@
-# genai-code-analyzer
+# GenAi Code Analyzer
+
