@@ -1,0 +1,87 @@
+Repository Documentation
+This document provides a comprehensive overview of the repository's structure and contents.
+The first section, titled 'Directory/File Tree', displays the repository's hierarchy in a tree format.
+In this section, directories and files are listed using tree branches to indicate their structure and relationships.
+Following the tree representation, the 'File Content' section details the contents of each file in the repository.
+Each file's content is introduced with a '[File Begins]' marker followed by the file's relative path,
+and the content is displayed verbatim. The end of each file's content is marked with a '[File Ends]' marker.
+This format ensures a clear and orderly presentation of both the structure and the detailed contents of the repository.
+
+Directory/File Tree Begins -->
+
+sample_code/
+├── Readme.md
+├── fizz_buzz_C_sharp.CS
+├── fizz_buzz_C_sharp_method2.cs
+
+<-- Directory/File Tree Ends
+
+File Content Begin -->
+[File Begins] Readme.md
+# C# programs to implement FizzBuzz
+
+Implementation of FizzBuzz involves printing numbers from 1 to 100.
+
+If the numbers are multiples of 3 then Fizz is printed. If they are multiples of 5,
+
+then Buzz is printed and if they are multiples of both 3 and 5 then FizzBuzz is printed.
+
+[File Ends] Readme.md
+
+[File Begins] fizz_buzz_C_sharp.CS
+using System;
+namespace FizzBuzzDemo {
+   public class example {
+      static void Main(string[] args) {
+         for (int i = 1; i <= 100; i++) {
+            if (i % 3 == 0 && i % 5 == 0) {
+               Console.WriteLine("FizzBuzz");
+            } else if (i % 3 == 0) {
+               Console.WriteLine("Fizz");
+            } else if (i % 5 == 0) {
+               Console.WriteLine("Buzz");
+            } else {
+               Console.WriteLine(i);
+            }
+         }
+      }
+   }
+}
+
+[File Ends] fizz_buzz_C_sharp.CS
+
+[File Begins] fizz_buzz_C_sharp_method2.cs
+﻿using System;
+
+namespace FizzBuzz
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            for (int i = 1; i <= 100; i++)
+            {
+                string str = "";
+                if (i % 3 == 0)
+                {
+                    str += "Fizz";
+                }
+                if (i % 5 == 0)
+                {
+                    str += "Buzz";
+                }
+                if (str.Length == 0)
+                {
+                    str = i.ToString();
+                }
+                Console.WriteLine(str);
+
+            }
+        }
+    }
+}
+
+[File Ends] fizz_buzz_C_sharp_method2.cs
+
+
+<-- File Content Ends
