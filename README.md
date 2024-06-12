@@ -28,23 +28,5 @@ ollama run codellama "Can you tell me what this code is doing?  $(<output.txt)"
 ollama run codellama "Can you find nay bugs in the code?  $(<output.txt)"
 ```
 
-## Cloud (AWS)
-We can run some larger models with 30B+ parameters for cloud AWS development. CodeWizard has a high-ranking 33B model that is suitable for cloud use.
-
-CPU accelerated:
-https://github.com/nlpxucan/WizardLM
-https://huggingface.co/WizardLMTeam/WizardCoder-33B-V1.1
-
-GPU accelerated (Linux/CUDA):
-https://huggingface.co/TheBloke/WizardCoder-33B-V1.1-GPTQ
-Consider creating a local virtual pyenv
-
-Setup a Python virtual environment with pyenv and install the required packages:
-```bash
-pyenv virtualenv 3.11 genaica
-
-pyenv activate genaica
-
-pip install boto3 sagemaker
-```
-Run the sagemaker.py example to deploy the model and run a prompt, using Python to read the output.txt and append to the prompt.
+## Cloud (Lambda)
+TO DO
