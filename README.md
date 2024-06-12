@@ -1,5 +1,5 @@
 # GenAi Code Analyzer
-This repository is a guide for flattening entire codebases and analyzing them with LLM models. 
+This repository is a guide for flattening entire codebases and analyzing them with LLMs. 
 
 ## Flatterning Codebases
 Repo2txt is a simple Python module that can take a local directory and flatten all of its content into a single text file for appending to a prompt.  https://github.com/donoceidon/repo2txt/tree/main
