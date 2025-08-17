@@ -28,5 +28,5 @@ ollama run codellama "Can you tell me what this code is doing?  $(<output.txt)"
 ollama run codellama "Can you find nay bugs in the code?  $(<output.txt)"
 ```
 
-## Cloud (Lambda)
+## Cloud (Bedrock)
 TO DO
